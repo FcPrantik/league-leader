@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faFacebook} from '@fortawesome/free-solid-svg-icons'
 
 const TeamDetails = () => {
     const {idTeam} = useParams();
@@ -12,7 +9,7 @@ const TeamDetails = () => {
         fetch(url)
         .then(res => res.json())
         .then(data => setTeam(data.teams[0]));
-    }, [])
+    }, [idTeam])
     return (
         <div className = "card mb-3">
             <img src={team.strTeamBanner} alt="" />
