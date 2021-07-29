@@ -6,6 +6,64 @@
   height: 40vmin;
   pointer-events: none;
 }
+.banner h3 {
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  color: aliceblue;
+  font-weight: bold;
+}
+.banner-picture {
+  height: 50vh;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.badge {
+  margin-left: 2.5%;
+  margin-bottom: 2%;
+  background-color: #f7e600;
+  width: 30%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  
+}
+.badge h2{
+  color: #282c34;
+}
+
+.badge img {
+  height: 100px;
+  margin-top: 25px;
+}
+
+.details-info {
+  background-color: blue;
+  padding: 30px;
+  color: aliceblue;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+  border-radius: 20px;
+  height: 250px;
+  position: relative;
+  
+}
+.inside img{
+  height: 200px;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+}
+.description {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 50px;
+}
+.social a{
+  padding: 20px;
+  font-size: 35px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
